@@ -1,4 +1,4 @@
-<templateSet group="CustomCompose">
+<templateSet group="ComposeSnippets">
     <template name="col" value="androidx.compose.foundation.layout.Column($MODIFIER$) {&#10;    $END$&#10;}"
               description="Creates a Column" toReformat="true" toShortenFQNames="true">
         <variable name="MODIFIER" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>

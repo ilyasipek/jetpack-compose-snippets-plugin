@@ -1,0 +1,162 @@
+<templateSet group="CustomCompose">
+    <template name="col" value="androidx.compose.foundation.layout.Column($MODIFIER$) {&#10;    $END$&#10;}"
+              description="Creates a Column" toReformat="true" toShortenFQNames="true">
+        <variable name="MODIFIER" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="rfs"
+              value="androidx.compose.runtime.remember {&#10;    androidx.compose.runtime.mutableFloatStateOf($INITIAL_VALUE$)&#10;}&#10;$END$"
+              description="remembers a float state" toReformat="true" toShortenFQNames="true">
+        <variable name="INITIAL_VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="row" value="androidx.compose.foundation.layout.Row($MODIFIER$) {&#10;    $END$&#10;}"
+              description="Creates a Row" toReformat="true" toShortenFQNames="true">
+        <variable name="MODIFIER" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="box" value="androidx.compose.foundation.layout.Box($MODIFIER$) {&#10;    $END$&#10;}"
+              description="Creates a Box" toReformat="true" toShortenFQNames="true">
+        <variable name="MODIFIER" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="mc" value="androidx.compose.material3.MaterialTheme.colorScheme.$COLOR$"
+              description="Material 3 color" toReformat="false" toShortenFQNames="true">
+        <variable name="COLOR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="mp" value="modifier: androidx.compose.ui.Modifier = androidx.compose.ui.Modifier,"
+              description="Modifier param with default" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="mv" value="modifier = androidx.compose.ui.Modifier" description="" toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN_EXPRESSION" value="true"/>
+            <option name="KOTLIN_OBJECT_DECLARATION" value="true"/>
+            <option name="KOTLIN_STATEMENT" value="true"/>
+            <option name="KOTLIN_TOPLEVEL" value="true"/>
+        </context>
+    </template>
+    <template name="rcv" value="verticalAlignment = androidx.compose.ui.Alignment.CenterVertically," description=""
+              toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="slot" value="$NAME$: @androidx.compose.runtime.Composable () -&gt; Unit," description=""
+              toReformat="true" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="sr" value="androidx.compose.ui.res.stringResource(id = R.string.$RESOURCE_ID$)"
+              description="String resouce" toReformat="false" toShortenFQNames="true">
+        <variable name="RESOURCE_ID" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="le" value="androidx.compose.runtime.LaunchedEffect($PARAM1$) {&#10;        $END$&#10;}"
+              description="LaunchEffect with one key" toReformat="true" toShortenFQNames="true">
+        <variable name="PARAM1" expression="kotlinVariable()" defaultValue="&quot;Unit&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="le2" value="androidx.compose.runtime.LaunchedEffect($PARAM1$, $PARAM2$) {&#10;        $END$&#10;}"
+              description="LaunchEffect with tow keys" toReformat="true" toShortenFQNames="true">
+        <variable name="PARAM1" expression="kotlinVariable()" defaultValue="&quot;key1&quot;" alwaysStopAt="true"/>
+        <variable name="PARAM2" expression="kotlinVariable()" defaultValue="&quot;key2&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="cch" value=" horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally" description=""
+              toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="ris"
+              value="androidx.compose.runtime.remember {&#10;    androidx.compose.runtime.mutableIntStateOf($INITIAL_VALUE$)&#10;}&#10;$END$"
+              description="remembers an integer state" toReformat="true" toShortenFQNames="true">
+        <variable name="INITIAL_VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="rs"
+              value="androidx.compose.runtime.remember {&#10;    androidx.compose.runtime.mutableStateOf($INITIAL_VALUE$)&#10;}&#10;$END$"
+              description="remembers an integer state" toReformat="true" toShortenFQNames="true">
+        <variable name="INITIAL_VALUE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+        </context>
+    </template>
+    <template name="pr" value="androidx.compose.ui.res.painterResource(id = R.drawable.$RESOURCE_ID$)"
+              description="String resouce" toReformat="false" toShortenFQNames="true">
+        <variable name="RESOURCE_ID" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="txt" value="androidx.compose.material3.Text(text = $TEXT$)" description="Creates a m3 Text"
+              toReformat="false" toShortenFQNames="true">
+        <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="scf" value="androidx.compose.material3.Scaffold { innerPadding -&gt; &#10;    $END$&#10;}"
+              description="Creates a m3 Scaffold" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="scfTopbar"
+              value="androidx.compose.material3.Scaffold(&#10;        topBar = {&#10;            $TOP_BAR$&#10;        }&#10;) { innerPadding -&gt; &#10;    $END$&#10;}"
+              description="Creates a m3 Scaffold with Top bar" toReformat="true" toShortenFQNames="true">
+        <variable name="TOP_BAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+    <template name="statehoisting"
+              value="$VALUE_NAME$: $TYPE$,&#10;on$CAPETLIZED_VALUE_NAME$Change: ($TYPE$) -&gt; Unit," toReformat="false"
+              toShortenFQNames="true">
+        <variable name="VALUE_NAME" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true"/>
+        <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="CAPETLIZED_VALUE_NAME" expression="capitalize(VALUE_NAME)" defaultValue="VALUE_NAME"
+                  alwaysStopAt="false"/>
+        <context>
+            <option name="KOTLIN" value="true"/>
+            <option name="KOTLIN_COMMENT" value="false"/>
+        </context>
+    </template>
+</templateSet>
